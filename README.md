@@ -26,6 +26,7 @@ npm install --ignore-engines or yarn install --ignore-engines
 Create a .env file in the root of the backend directory and add the necessary environment variables, such as database connection details, API keys, etc.
 
 MONGODB_URI = mongodb+srv://gib:lL2oXxsuPxc45Z7W@test.tx02zbx.mongodb.net/?retryWrites=true&w=majority
+
 PORT = 4000
 
 Start the backend server:
