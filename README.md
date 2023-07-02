@@ -10,12 +10,15 @@ Getting Started
 Provide step-by-step instructions to help users set up and run your project locally. You can include the following sections:
 
 #Clone the repository:
-git clone <repository_url>
+
+git clone https://github.com/longmenegib/upforcetech-test/
 
 #Backend
+
 Change to the backend directory:
 
 cd backend
+
 Install the required dependencies:
 
 npm install --ignore-engines or yarn install --ignore-engines
@@ -27,19 +30,17 @@ PORT = 4000
 
 Start the backend server:
 
-bash
-Copy code
 npm start or yarn start
+
 The server should start running on a specified port (e.g., http://localhost:4000).
 
 #Frontend
 Change to the frontend directory:
 
 cd frontend
+
 Install the required dependencies:
 
-bash
-Copy code
 npm install or yarn install
 In the project's source code, you may need to configure the API endpoint to match the backend server's URL (for local by default it is: http://localhost:4000). YOu can change it in frontend/src/urls/Api_url.js
 
