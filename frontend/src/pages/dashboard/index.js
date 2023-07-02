@@ -35,7 +35,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function DashboardPage({ loading, data }) {
+function DashboardPage({ loading, data, loading_action }) {
   const [open, setOpen] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
   const [modaltype, setModalType] = useState("");
@@ -185,7 +185,7 @@ function DashboardPage({ loading, data }) {
         title={modalTitle}
         formValues={formValues}
         setFormValues={setFormValues}
-        loading={loading}
+        loading_action={loading_action}
         type={modaltype}
       />
     </div>
@@ -195,6 +195,7 @@ function DashboardPage({ loading, data }) {
 const mapStateToProps = ({ ArticleReducer }) => ({
   data: ArticleReducer.data,
   loading: ArticleReducer.loading,
+  loading_action: ArticleReducer.loading_action
 });
 
 export default connect(mapStateToProps)(DashboardPage);

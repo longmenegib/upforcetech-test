@@ -28,7 +28,7 @@ export default function AddEditModal({
   title,
   setFormValues,
   formValues,
-  loading,
+  loading_action,
   type
 }) {
   const [formErrors, setFormErrors] = React.useState({
@@ -165,7 +165,7 @@ export default function AddEditModal({
                 backgroundColor: colors.dark.primary,
               }}
               variant="contained"
-              loading={loading}
+              loading={loading_action}
             >
               Submit
             </LoadingButton>
